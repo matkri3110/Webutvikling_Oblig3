@@ -1,135 +1,75 @@
-/* General Styles */
+/* Set default font and remove margin and padding from body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Header Styles */
+/* Style the header */
 header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding: 1rem;
-    background-color: white;
-}
-
-header section {
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav span {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 0.5rem;
-}
-
-/* Search Form */
-form {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    background-color: white;
-}
-
-form input[type="text"] {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 0.5rem 1rem;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Main Content */
-main {
-    padding: 2rem;
-}
-
-main section {
-    margin-bottom: 2rem;
-}
-
-main section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-main section article {
+    background-color: #ffffff;
+    padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-main section article img {
-    max-width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-main section article p {
-    margin-top: 1rem;
+    justify-content: space-between;
     text-align: center;
 }
 
-.shop-now-btn {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-/* Footer Styles */
-footer {
-    background-color: white;
-    padding: 2rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+h1 a {
+    color: #333;
+    /* adjust as per the color in the image */
+    font-size: 30px;
+    /* adjust size if needed */
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
-footer nav ul {
-    list-style-type: none;
-    padding: 0;
+.hamburger-menu {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+    margin-right: 20px;
+    /* Space between menu and logo */
 }
 
-footer nav ul li {
-    margin-bottom: 0.5rem;
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
 }
 
-#social-icons {
+.search-section input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.icon-nav {
     display: flex;
-    justify-content: end;
-    list-style-type: none;
+    align-items: center;
+}
+/* Default styles for mobile */
+.icon-nav .icon {
+    font-size: 0;
+    /* hide text */
+    display: inline-block;
+    width: 24px;
+    /* adjust based on icon size */
+    overflow: hidden;
+    text-align: center;
 }
 
-#social-icons li {
-    margin-left: 1rem;
+.icon-nav .icon:before {
+    /* show only icons */
+    font-size: 16px;
+    /* adjust based on desired icon size */
 }
