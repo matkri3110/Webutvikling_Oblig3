@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <link href="css/fontawesome-free-6.4.2-web (1)/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
-    <link href="css/fontawesome-free-6.4.2-web (1)/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
-    <link href="css/fontawesome-free-6.4.2-web (1)/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Home</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/fontawesome-free-6.4.2-web (1)/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web (1)/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web (1)/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>BIRDIES</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo">BIRDIES</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-bar">
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="produkt.html">Golfsko</a></li>
+                    <li><a href="produkt.html">Herresko</a></li>
+                    <li><a href="#">Damesko</a></li>
+                    <li><a href="#">Junior</a></li>
+                    <li><a href="#">HIO Team</a></li>
+                    <li><a href="#">Kampanjer</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Seksjon 1, Høstsalg-->
+            <section id="høstsalg">
+                <h2>Høstsalg!</h2>
+                <p>Vær klar til å nyte høstgolfen avhengig av været</p>
+                <a href="#" class="shop-nå-btn">Shop nå</a>
+            </section>
+            <!--Seksjon 2, Damesko-->
+            <section class="flex-section">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Damesko!</h2>
+                    <a href="#" class="shop-nå-btn">Shop nå</a>
+                </section>
+            </section>
+            <!--Seksjon 3, Herresko-->
+            <section class="flex-section right">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Herresko!</h2>
+                    <a href="#" class="shop-nå-btn">Shop nå</a>
+                </section>
+            </section>
+        </main>
+        <footer>
+        </footer>
+
+        </div>
+        
+        <script>
+
+            let x = document.querySelector(".nav-bar")
+
+            document.getElementById("ham").addEventListener("click", (e) => {
+                if (x.className === "nav-bar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-bar";
+                }
+            })
+
+        </script>
+
+    </body>
+        
 
 </html>
