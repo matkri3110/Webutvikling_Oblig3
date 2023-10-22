@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
@@ -20,7 +20,7 @@
                     <i id="close" class="fa-solid fa-xmark"></i>
                 </label>
                 <ul class="nav__menu">
-                    <li><a href="#">BIRDIES</a></li>
+                    <li><a href="index.html" id="Logo">BIRDIES</a></li>
                     <li><a href="produkt.html">Herresko</a></li>
                     <li><a href="produkt.html">Damesko</a></li>
                     <li><a href="produkt.html">Junior</a></li>
@@ -29,38 +29,38 @@
                 </ul>
             </nav>
         </header>
-        <div class="category-grid">
-            <main class="category-overwiev">
-                <!--Seksjon 1, Høstsalg-->
-                <section class="høstsalg">
-                    <h1>Høstsalg!</h1>
-                    <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                    <p>Vær klar til å nyte høstgolfen avhengig av været</p>
-                    <a href="#" class="shop-nå-btn">Shop nå</a>
-                </section>
-                <!--Seksjon 2, Damesko-->
-                <section class="flex-section">
-                    <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                    <section>
+        <main class="category-overview">
+                <div class="container">
+                <!--Høstsalg-->
+                <section class="flex-section-kategorier">
+                    <article class="product-section-salg">
+                        <img src="img/golf-787826_640 (1).jpg" alt="Bilde av golfer">
+                        Image by <a href="https://pixabay.com/users/422737-422737/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=787826">422737</a>from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=787826">Pixabay</a>
+                        <h1>Høstsalg!</h1>
+                        <a href="produkt.html" class="shop-nå-btn">Shop nå</a>
+                    </article>
+                <!--Damesko-->
+                    <article class="product-section-damesko">
+                        <img src="img/selanee-henderon-3512711_640 (1).jpg" alt="Bilde av damegolfer">
+                        Image by <a href="https://pixabay.com/users/jmw02824-9446720/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3512711">Justin</a>from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3512711">Pixabay</a>
                         <h2>Damesko!</h2>
-                        <a href="#" class="shop-nå-btn">Shop nå</a>
-                    </section>
-                </section>
-                <!--Seksjon 3, Herresko-->
-                <section class="flex-section right">
-                    <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                    <section>
+                        <a href="produkt.html" class="shop-nå-btn">Shop nå</a>
+                    </article>
+                <!--Herresko-->
+                    <article class="product-section-herresko">
+                        <img src="img/golf.jpg" alt="bilde av herregolfer">
+                        Image by <a href="https://pixabay.com/users/markusspiske-670330/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1486354">Markus Spiske</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1486354">Pixabay</a>
                         <h2>Herresko!</h2>
-                        <a href="#" class="shop-nå-btn">Shop nå</a>
-                    </section>
+                        <a href="produkt.html" class="shop-nå-btn">Shop nå</a>
+                    </article>
                 </section>
+                </div>    
             </main>
-        </div> 
         <footer>
             <div class="footer-container">
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
                 <nav class="footer-nav">
                     <ul>
@@ -76,9 +76,6 @@
             <article class="footer-bottom">
                 <p>Copyright &copy;2023; Designed by <span class="designer">Mathias</span></p>
             </article>
-        </footer>
-        </div>  
+        </footer> 
     </body>
-        
-
 </html>
