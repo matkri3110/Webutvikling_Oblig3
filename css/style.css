@@ -12,8 +12,8 @@ body{
 .container{
     display: grid;
     grid-template-rows: auto;
-    gap: 20 px;
-    padding: 20px 0;
+    gap: 20px;
+    padding: 20px;
 }
 
 .category-overview{
@@ -232,7 +232,7 @@ footer{
 /* Reset */
 
 .footer-nav{
-    margin: 30 px 0;
+    margin: 30px 0px;
 }
 
 .footer-nav ul{
@@ -268,7 +268,6 @@ footer{
 .designer{
     opacity: 1;
     text-transform: uppercase;
-    letter-spacing: 1 px;
     font-weight: 400;
     margin: 0px 5px;
 }
@@ -309,6 +308,7 @@ li{
     display: flex;
     flex-direction: column;
     }
+
     /* index.html */
     .product-section-salg{
         display: flex;
@@ -376,12 +376,12 @@ li{
 
     }
 
+    /* footer */
+
     footer{
         position: absolute;
         width: 100%;
     }
-
-
 
     .nav__toggle{
         display: none;
