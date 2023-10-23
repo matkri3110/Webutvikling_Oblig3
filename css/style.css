@@ -361,13 +361,30 @@ li{
     }
 
     /* handlekurv.html */
+    .flex-section-sneaker{
+        grid-area: 3 / 2 / 6 / 3;
+    }
+    
+    #pay-btn{
+        grid-area: 8 / 2 / 8 / 3;
+    }
 
+    #betalingsmåter{
+        grid-area: 7 / 2 / 7 / 3;
+    }
+
+    .handlekurv{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    #sammendrag{
+        grid-area: 6 / 2 / 6 / 3;
+    }
     .flex-section-sneaker {
         display: flex;
         justify-content: center;
         gap: 1rem;
-    }
-
+}
     .flex-section-sneaker a{
         display: flex;
         justify-content: space-around;
